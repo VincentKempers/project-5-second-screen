@@ -1,9 +1,83 @@
-body {
-  background-color: black;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  font-weight: bold;
-  font-style: 22;
-  color: yellow;
+body {
+	background-color: hsl(211, 54%, 60%);
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	height: 10vh;
+	background: hsl(214, 75%, 35%);
+	padding-top: 0.5em;
+	position: fixed;
+
+}
+
+nav > img {
+	height: 85%;
+}
+
+main {
+	max-width: 90vw;
+	margin-left: 5vw;
+}
+
+main > p {
+	text-align: left;
+	color: white;
+}
+
+main > img {
+	margin: 3em 0em 3em 3em;
+	width: 60%;
+	border: 10px solid white;
+}
+
+main > h2 {
+	padding-top: 6em;
+  	font-weight: 800;
+ 	color: white;
+ 	text-shadow: 2px 1px 2px black;
+}
+
+section > h2 {
+	margin-bottom: 2em;
+	margin-top: 2em;
+	color:white;
+	text-shadow: 2px 1px 2px black;
+}
+
+#deweekvan {
+	text-align: center;
+	margin: 0em 0em 4em 0em;
+}
+
+
+#deweekvan > img {
+	width: 30%;
+}
+
+#deweekvan > a >img {
+	width: 30%;
+}
+
+section > button {
+	background-color:red;
+	width: 49vw;
+	height: 5.5em;
+	outline: none;
+	padding: 0;
+	margin: 0;
+	color:white;
+	font-weight: 900;
+}
+
+button:nth-child(2){
+	background-color:green;
 }
