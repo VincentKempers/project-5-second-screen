@@ -1,13 +1,17 @@
 /* set standard variables, starting with mobile design */
 
 * {
-	padding: 0;
-	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+	margin-top: 0;
+}
+
+html {
+	margin:0;
 }
 
 body {
 	background-color: hsl(211, 54%, 60%);
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -23,7 +27,7 @@ h2 {
 
 p {
 	color: white;
-	font-weight: 600;
+	font-weight: 300;
 }
 
 button {
@@ -31,6 +35,7 @@ button {
 }
 
 nav {
+
 	display: flex;
 	justify-content: center;
 	width: 100vw;
@@ -38,9 +43,10 @@ nav {
 	background: hsl(214, 75%, 35%);
 	padding-top: 0.5em;
 	position: fixed;
+	margin: 0 !important;
 }
 
-nav > img {
+#logo {
 	height: 85%;
 }
 
@@ -56,7 +62,7 @@ main > img {
 }
 
 main > h2 {
-	padding-top: 6em;
+	padding-top: 5em;
   	font-weight: 800;
  	color: white;
  	text-shadow: 2px 1px 2px black;
@@ -81,17 +87,87 @@ section > h2 {
 	width: 30%;
 }
 
-section > a > button {
-	background-color:red;
-	width: 49vw;
-	height: 5.5em;
-	outline: none;
-	padding: 0;
-	margin: 0;
-	color:white;
-	font-weight: 900;
+#vote {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-bottom: 0.5em;
 }
 
-section > a:nth-child(2) > button {
-	background-color: green;
+button {
+	height: 4em;
+	width: 40vw;
+	color: white;
+	font-weight: bold;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	text-shadow: 2px 1px 2px black;
+	border: none;
+	cursor:pointer;
+	background: #109bce;
+  background-image: -webkit-linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  background-image: linear-gradient(to top, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+	border-radius: 5px;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 5px 3px #000;
+}
+
+button:active {
+ top: 3px;
+ box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+
+button:before {
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: normal;
+  color: #fff;
+  width: 85px;
+  height: 90px;
+  display: block;
+  position: absolute;
+  padding-top:10px;
+  top:10px;
+  text-shadow: 1px 1px 2px #07526e;
+}
+
+#share {
+	display: block;
+	margin: 0 auto;
+	width: 8rem;
+	height: 3.5em;
+	background-color: red;
+	color: white;
+	font-size: 1rem;
+	font-weight: 900;
+	margin-bottom: 6em;
+	background-image: -webkit-linear-gradient(bottom, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+  background-image: -o-linear-gradient(bottom, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+  background-image: linear-gradient(to top, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+}
+
+footer > h3 {
+	font-size: 1rem;
+}
+
+.bar {
+	fill: white;
+}
+
+.tick > text {
+	fill: white;
+}
+
+.tick > line {
+	stroke: white;
+}
+
+.axis--y > path {
+	stroke: white;
+}
+
+.axis--x > path {
+	stroke: white;
 }
