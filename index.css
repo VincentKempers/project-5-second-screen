@@ -1,3 +1,5 @@
+/* set standard variables, starting with mobile design */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -8,10 +10,23 @@ body {
 	background-color: hsl(211, 54%, 60%);
 }
 
-h2 {
-	font-weight: 800;
-	color:white;
+h1, h2, h3, h4, h5, h6 {
+	color: white;
 	text-shadow: 2px 1px 2px black;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+
+p {
+	color: white;
+	font-weight: 600;
+}
+
+button {
+	font-size: 0.75rem;
 }
 
 nav {
@@ -22,7 +37,6 @@ nav {
 	background: hsl(214, 75%, 35%);
 	padding-top: 0.5em;
 	position: fixed;
-
 }
 
 nav > img {
@@ -32,11 +46,6 @@ nav > img {
 main {
 	max-width: 90vw;
 	margin-left: 5vw;
-}
-
-main > p {
-	text-align: left;
-	color: white;
 }
 
 main > img {
@@ -71,7 +80,7 @@ section > h2 {
 	width: 30%;
 }
 
-section > button {
+section > a > button {
 	background-color:red;
 	width: 49vw;
 	height: 5.5em;
@@ -82,6 +91,6 @@ section > button {
 	font-weight: 900;
 }
 
-button:nth-child(2){
-	background-color:green;
+section > a:nth-child(2) > button {
+	background-color: green;
 }
