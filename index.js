@@ -1,1 +1,3 @@
-alert('Star Wars Monday');
+var name = 'vincent';
+
+console.log(name);

@@ -8,6 +8,12 @@ body {
 	background-color: hsl(211, 54%, 60%);
 }
 
+h2 {
+	font-weight: 800;
+	color:white;
+	text-shadow: 2px 1px 2px black;
+}
+
 nav {
 	display: flex;
 	justify-content: center;
@@ -49,8 +55,6 @@ main > h2 {
 section > h2 {
 	margin-bottom: 2em;
 	margin-top: 2em;
-	color:white;
-	text-shadow: 2px 1px 2px black;
 }
 
 #deweekvan {
