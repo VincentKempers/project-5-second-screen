@@ -1,4 +1,4 @@
-var name = 'vincent';
+var nameOne;
 
 var meerdere = document.getElementById('meerdere');
 var meerdereText = document.getElementById('meerdere-tekst');
@@ -19,6 +19,10 @@ function startGameAlleen() {
 	startButton.removeAttribute('disabled');
 }
 
+function storeName() {
+	nameOne = prompt('Vul hier je naam in', 'jouw naam');
+}
+
 meerdere.addEventListener('click', startGameMeerdere);
 alleen.addEventListener('click', startGameAlleen);
-
+startButton.addEventListener('click', storeName, true)
