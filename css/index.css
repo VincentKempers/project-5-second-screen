@@ -11,7 +11,7 @@ html {
 
 body {
 	background-color: hsl(211, 54%, 60%);
-	margin: 0;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -21,11 +21,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: 800;
+	text-transform: uppercase;
 }
 
-p {
+p,li {
 	color: white;
 	font-weight: 300;
 }
@@ -48,52 +49,6 @@ nav {
 
 #logo {
 	height: 85%;
-}
-
-main {
-	max-width: 90vw;
-	margin-left: 5vw;
-}
-
-main > img {
-	margin: 3em 0em 3em 3em;
-	width: 60%;
-	border: 10px solid white;
-}
-
-main > h2 {
-	padding-top: 5em;
-  	font-weight: 800;
- 	color: white;
- 	text-shadow: 2px 1px 2px black;
-}
-
-section > h2 {
-	margin-bottom: 2em;
-	margin-top: 2em;
-}
-
-#deweekvan {
-	text-align: center;
-	margin: 0em 0em 4em 0em;
-}
-
-
-#deweekvan > img {
-	width: 30%;
-}
-
-#deweekvan > a >img {
-	width: 30%;
-}
-
-#vote {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	margin-left: 2em;
-	margin-right: 2em;
-	margin-bottom: 0.5em;
 }
 
 button {
@@ -133,6 +88,66 @@ button:before {
   text-shadow: 1px 1px 2px #07526e;
 }
 
+
+main {
+	max-width: 90vw;
+	margin-left: 5vw;
+}
+
+main > img {
+	margin: 3em 0em 3em 3em;
+	width: 60%;
+	border: 10px solid white;
+}
+
+main > h2 {
+	padding-top: 5em;
+  	font-weight: 800;
+ 	color: white;
+ 	text-shadow: 2px 1px 2px black;
+}
+
+main > ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: center;
+	padding: 0;
+}
+
+
+main > ul > li  {
+	margin-right: 1em;
+}
+
+section > h2 {
+	margin-bottom: 2em;
+	margin-top: 2em;
+}
+
+#deweekvan {
+	text-align: center;
+	margin: 0em 0em 4em 0em;
+}
+
+
+#deweekvan > img {
+	width: 30%;
+}
+
+#deweekvan > a >img {
+	width: 30%;
+}
+
+#vote {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 2em;
+	margin-right: 2em;
+	margin-bottom: 0.5em;
+}
+
 #share {
 	display: block;
 	margin: 0 auto;
@@ -151,6 +166,27 @@ button:before {
 footer > h3 {
 	font-size: 1rem;
 }
+
+#meerdere-tekst {
+	display: none;
+}
+
+#alleen-tekst {
+	display: none;
+}
+
+#start[disabled="true"] {
+	cursor: not-allowed;
+	background: grey;
+}
+
+footer > a > #start {
+	display: block;
+	margin: 0 auto;
+	background: green;
+}
+
+/*d3js bar styling*/
 
 .bar {
 	fill: white;
