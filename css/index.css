@@ -41,6 +41,11 @@ p,li {
 	font-weight: 300;
 }
 
+img {
+	display: block;
+	margin: 0 auto;
+}
+
 button {
 	font-size: 0.75rem;
 }
@@ -107,9 +112,9 @@ main {
 /* Mobile specific */
 
 main > img {
-	margin: 3em 0em 3em 3em;
 	width: 60%;
 	border: 10px solid white;
+	margin-bottom: 2em;
 }
 
 main > h2 {
@@ -143,11 +148,9 @@ section > h2 {
 }
 
 
-#deweekvan > img {
-	width: 30%;
-}
-
 #deweekvan > a >img {
+	display: inline-block;
+	flex-direction: row;
 	width: 30%;
 }
 
@@ -179,6 +182,10 @@ footer > h3 {
 	font-size: 1rem;
 }
 
+section > ul {
+	list-style: none;
+}
+
 #meerdere-tekst {
 	display: none;
 }
@@ -196,6 +203,35 @@ footer > a > #start {
 	display: block;
 	margin: 0 auto;
 	background: green;
+}
+
+/*pop up attemt*/
+
+.back-overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.top-overlay {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
 }
 
 /*d3js bar styling*/

@@ -39,8 +39,13 @@
 	</main>
 	<footer>
 		<a href="room.html"><button id='start' disabled="true">Begin</button></a>
+		<div id='light' class='top-content'">
+			<form name="myform" action="">Enter name: <input type="text" name="contestant"/>
+         		<input type="button" value="Set Cookie" onclick="WriteCookie();"/>
+      		</form>
+      </div>
+      <div id="fade" class="back-overlay" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"></div>
 	</footer>
 	<script src='../index.js'></script>
-	<script src='../js/chart.js'></script>
 </body>
 </html>
