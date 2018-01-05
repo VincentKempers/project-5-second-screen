@@ -14,8 +14,6 @@ const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
 
-
-
 function startGameMeerdere() {
 	alleenText.style.display = 'none';
 	meerdereText.style.display = 'block';
@@ -39,7 +37,4 @@ meerdere.addEventListener('click', startGameMeerdere);
 alleen.addEventListener('click', startGameAlleen);
 startButton.addEventListener('click', storeName, true);
 
-
-
 console.log(localStorage.getItem('name'));
-
