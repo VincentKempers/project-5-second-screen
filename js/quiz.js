@@ -1,4 +1,4 @@
-alert('vincent');
 playerName.innerHTML = name;
 
-console.log('vincent');
+console.log('name : ' + localStorage.getItem('name'));
+console.log('score : ' + localStorage.getItem('score'));

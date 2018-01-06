@@ -1,6 +1,6 @@
 var nameOne;
-let name = localStorage.getItem('name');
-let score = 2;
+var name = localStorage.getItem('name');
+var score = 2;
 
 const meerdere = document.getElementById('meerdere');
 const meerdereText = document.getElementById('meerdere-tekst');
