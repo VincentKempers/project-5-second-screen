@@ -1,7 +1,7 @@
 /* set standard variables, starting with mobile design */
 
 * {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	margin-top: 0;
 }
 
@@ -41,14 +41,11 @@ p,li {
 	font-weight: 300;
 }
 
-img {
+img, svg {
 	display: block;
 	margin: 0 auto;
 }
 
-button {
-	font-size: 0.75rem;
-}
 
 nav {
 
@@ -66,7 +63,12 @@ nav {
 	height: 85%;
 }
 
+
 button {
+	font-size: 0.75rem;
+}
+
+button, label {
 	height: 4em;
 	width: 40vw;
 	color: white;
@@ -84,12 +86,12 @@ button {
 	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 5px 3px #000;
 }
 
-button:active {
+button:active, label:before {
  top: 3px;
  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
 }
 
-button:before {
+button:before, label:before {
   font-size: 50px;
   line-height: 1em;
   font-weight: normal;
@@ -99,8 +101,36 @@ button:before {
   display: block;
   position: absolute;
   padding-top:10px;
-  top:10px;
+  top: 10px;
   text-shadow: 1px 1px 2px #07526e;
+}
+
+.answers > label:nth-child(1) {
+	background: red;
+	background-image: -webkit-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);
+    background-image: linear-gradient(to top, rgb(208,2,27) 0%, rgb(252,5,33) 100%);
+}
+
+.answers > label:nth-child(2) {
+	background: red;
+	background-image: -webkit-linear-gradient(bottom, rgb(47,207,76) 0%, rgb(68,248,101) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(47,207,76) 0%, rgb(68,248,101) 100%);
+    background-image: linear-gradient(to top, rgb(47,207,76) 0%, rgb(68,248,101) 100%);
+}
+
+.answers > label:nth-child(3) {
+	background: red;
+/*	background-image: -webkit-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);*/
+    background-image: linear-gradient(to top, rgb(235,221,45) 0%, rgb(252,245,60) 100%);
+}
+
+.answers > label:nth-child(4) {
+	background: red;
+/*	background-image: -webkit-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(208,2,27) 0%, rgb(252,5,33) 100%);*/
+    background-image: linear-gradient(to top, rgb(245,166,35) 0%, rgb(251,210,73) 100%);
 }
 
 
