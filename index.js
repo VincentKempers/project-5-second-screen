@@ -27,6 +27,7 @@ function startGameAlleen() {
 function storeName() {
 	nameOne = prompt("vul hier je naam in", "Jouw Naam");
 	localStorage.setItem("name", nameOne);
+	localStorage.setItem("score", score);
 }
 
 
@@ -35,4 +36,6 @@ meerdere.addEventListener("click", startGameMeerdere);
 alleen.addEventListener("click", startGameAlleen);
 startButton.addEventListener("click", storeName, true);
 console.log(localStorage.getItem("name"));
+
+
 
