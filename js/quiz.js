@@ -1,8 +1,8 @@
-// var playerName = document.getElementById("playername");
-// var totalScore = document.getElementById("score");
-// playerName.innerHTML = localStorage.getItem("name");
-// totalScore.innerHTML = localStorage.getItem("score");
-// var score = 0;
+var playerName = document.getElementById("playername");
+var totalScore = document.getElementById("score");
+playerName.innerHTML = localStorage.getItem("name");
+totalScore.innerHTML = localStorage.getItem("score");
+var score = 0;
 (function() {
 const myQuestions = [
     {
