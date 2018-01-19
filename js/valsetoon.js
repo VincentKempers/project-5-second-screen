@@ -1,14 +1,3 @@
-/*
-@TODO
-Valse toon
-- valse toon is een check die geeft 4 antwoorden weer met een vraag
-- 1 antwoord is goed
-- de vraag luidt hoeveel vragen heeft Albert van linde goed
-- indien fout - 100
-- indien goed + 200
-In beide gevallen gaat de gebruiker naar het resultaten scherm
-
-*/
 var score = localStorage.getItem("score");
 
 var QandA = [

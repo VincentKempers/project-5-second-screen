@@ -357,7 +357,7 @@ a > #answer4 {
 }
 
 .validate > h2 {
-  padding-top: 50%
+  padding-top: 50%;
 }
 
 .validate > p {
@@ -371,7 +371,7 @@ a > #answer4 {
 }
 
 .false > h2 {
-  padding-top: 50%
+  padding-top: 50%;
 }
 
 .correct {
@@ -455,8 +455,8 @@ footer > a > #start {
 }
 
 iframe {
-	width: 100%,
-	height: 300rem
+	width: 100%;
+	height: 300rem;
 }
 
 a > button {
@@ -524,6 +524,18 @@ a > button {
     width: 22em;
   }
 
+    .validate > h2 {
+  padding-top: 22em;
+}
+
+.false > h2 {
+  padding-top: 22em;
+}
+
+.correct > h2 {
+  padding-top: 22em;
+}
+
   
 }
 
@@ -539,6 +551,8 @@ a > button {
   a > button {
     width: 24em;
   }
+
+
 
   
 }

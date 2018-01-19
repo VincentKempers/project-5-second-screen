@@ -3,10 +3,8 @@ var wrongAnswer = document.getElementById('false');
 var rightAnswer = document.getElementById('correct');
 var score = localStorage.getItem("score");
 
-console.log(score);
-console.log(window.location.href);
 
-  if (window.location.href == "http://localhost:8765/quiz/answerfl.html") {
+  if (window.location.href == "https://vincentkempers.github.io/project-5-second-screen-app/pages/answerfl.html" || window.location.href == "http://localhost:8765/pages/answerfl.html") {
     window.setTimeout(function () {
       validation.style.display = 'none';
       wrongAnswer.style.display = 'flex';
