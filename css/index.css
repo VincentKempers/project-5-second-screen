@@ -32,6 +32,10 @@ h2 {
 	font-weight: 800;
 }
 
+h5 {
+  padding-top: 3em;
+}
+
 p,li,th {
   font-size: 1em;
 	color: white;
@@ -129,14 +133,16 @@ button:before, label:before {
 
 
 main {
-	max-width: 90vw;
-	margin-left: 5vw;
+  display: block;
+  margin:0 auto;
+	max-width: 83vw;
+  text-align: center;
 }
 
 /* Mobile specific */
 
 main > img {
-	width: 60%;
+	width: 50%;
 	border: 10px solid white;
 	margin-bottom: 2em;
 }
@@ -146,6 +152,12 @@ main > h2 {
   	font-weight: 800;
  	color: white;
  	text-shadow: 2px 1px 2px black;
+}
+
+main > p {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 3em;
 }
 
 main > ul {
@@ -167,13 +179,43 @@ section {
   align-items: center;
 }
 
-tr > th:nth-child(1) {
-  padding-right: 7em;
+tbody {
+  text-align: left;
+}
+
+table {
+  margin-bottom: 2em; 
+}
+
+
+th {
+  padding-bottom: 1em; 
+}
+
+td  {
+  padding-right: 2em;
 }
 
 section > h2 {
 	margin-bottom: 2em;
 	margin-top: 2em;
+}
+
+section > input {
+  padding: 1em 2em 1em 2em;
+  margin-bottom: 3em;
+}
+
+#transformatie-2 {
+  display: none;
+}
+
+#transformatie-3 {
+  display: none;
+}
+
+#transformatie-4 {
+  display: none;
 }
 
 #deweekvan {
@@ -214,9 +256,11 @@ section > h2 {
 
 #meerdere-tekst {
   display: none;
+  padding-bottom: 2em;
 }
 
 #alleen-tekst {
+  padding-bottom: 2em;
   display: none;
 }
 
@@ -229,6 +273,13 @@ section > h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5em;
+  padding-top: 2em;
+}
+
+.possible-answers  > li {
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 #false {
@@ -270,10 +321,43 @@ section > h2 {
   animation: correctAnimation 4s ease infinite;
 }
 
+a > #answer1 {
+  margin-bottom: 1em;
+  background-image: -webkit-linear-gradient(bottom, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+  background-image: -o-linear-gradient(bottom, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+  background-image: linear-gradient(to top, hsl(356, 81%, 45%) 0%, hsl(357, 70%, 40%) 100%);
+  box-shadow: inset 0px 1px 0px red, 0px 5px 0px 0px darkred, 0px 5px 3px #000;
+}
+
+a > #answer2 {
+  margin-bottom: 1em;
+  background-image: -webkit-linear-gradient(bottom, #34e755 0%, #22ba3e 100%);
+  background-image: -o-linear-gradient(bottom, #34e755 0%, #22ba3e 100%);
+  background-image: linear-gradient(to top, #34e755 0%, #22ba3e 100%);
+  box-shadow: inset 0px 1px 0px #34e755, 0px 5px 0px 0px #22ba3e, 0px 5px 3px #000;
+}
+
+a > #answer3 {
+  background-image: -webkit-linear-gradient(bottom, #fcf53b 0%, #ecde2d 100%);
+  background-image: -o-linear-gradient(bottom, #fcf53b 0%, #ecde2d 100%);
+  background-image: linear-gradient(to top, #fcf53b 0%, #ecde2d 100%);
+  box-shadow: inset 0px 1px 0px #fcf53b, 0px 5px 0px 0px #ecde2d, 0px 5px 3px #000;
+}
+
+a > #answer4 {
+  background-image: -webkit-linear-gradient(bottom, #fbd249 0%, #f5a523 100%);
+  background-image: -o-linear-gradient(bottom, #fbd249 0%, #f5a523 100%);
+  background-image: linear-gradient(to top, #fbd249 0%, #f5a523 100%);
+  box-shadow: inset 0px 1px 0px #fbd249, 0px 5px 0px 0px #f5a523, 0px 5px 3px #000;
+}
+
 .validate{
   flex-direction: column;
   align-items: center;
-  padding-top: 60%;
+}
+
+.validate > h2 {
+  padding-top: 50%
 }
 
 .validate > p {
@@ -284,14 +368,20 @@ section > h2 {
   display: none;
   flex-direction: column;
   align-items: center;
-  padding-top: 60%;
+}
+
+.false > h2 {
+  padding-top: 50%
 }
 
 .correct {
   display: none;
   flex-direction: column;
   align-items: center;
-  padding-top: 60%;
+}
+
+.correct > h2 {
+  padding-top: 50%;
 }
 
 @-webkit-keyframes correctAnimation {
@@ -369,34 +459,11 @@ iframe {
 	height: 300rem
 }
 
-/*pop up attempt*/
-
-/*.back-overlay {
-  display: none;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 1001;
-  -moz-opacity: 0.8;
-  opacity: .80;
-  filter: alpha(opacity=80);
+a > button {
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
-.top-overlay {
-  display: none;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 50%;
-  height: 50%;
-  padding: 16px;
-  border: 16px solid orange;
-  background-color: white;
-  z-index: 1002;
-  overflow: auto;
-}*/
+
 
 /*d3js bar styling*/
 
@@ -419,3 +486,94 @@ iframe {
 .axis--x > path {
 	stroke: white;
 }
+
+
+
+@media screen and (min-width: 40em) {
+
+  main > h2 {
+    padding-top: 9em;
+  }
+
+  svg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .youtube-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+  }
+  
+}
+
+
+
+@media screen and (min-width: 75em) {
+
+  main {
+    display: block;
+    margin:0 auto;
+    max-width: 50vw;
+    text-align: center;
+  }
+
+  a > button {
+    width: 22em;
+  }
+
+  
+}
+
+@media screen and (min-width: 105em) {
+
+  main {
+    display: block;
+    margin:0 auto;
+    max-width: 50vw;
+    text-align: center;
+  }
+
+  a > button {
+    width: 24em;
+  }
+
+  
+}
+
+@media screen and (min-width: 105em) {
+
+  main {
+    display: block;
+    margin:0 auto;
+    max-width: 50vw;
+    text-align: center;
+  }
+
+  a > button {
+    width: 31em;
+  }
+
+  
+}
+
+
+@media screen and (min-width: 110em) {
+
+  main {
+    display: block;
+    margin:0 auto;
+    max-width: 50vw;
+    text-align: center;
+  }
+
+  a > button {
+    width: 34em;
+  }
+
+  
+}
+
+
